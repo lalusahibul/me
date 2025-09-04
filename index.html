@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+<link rel="stylesheet" href="css/style.css">
 
-<body>
-    <nav class="flex justify-between items-center bg-slate-800 p-4 text-white relative">
+<body class="bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 min-h-screen">
+    <nav id="navbar" class="navbar navbar-top flex justify-between items-center p-4 text-gray-800 relative">
         <div class="hidden md:flex items-center">
-            <div class="w-16 h-16 flex items-center justify-center">
-                <img src="img/logo-ibul.png" alt="Logo">
+            <div id="logo1" class="w-16 h-16 flex items-center justify-center">
+                <img src="img/logo-ibul.png" class="logo-blue" alt="Logo">
             </div>
         </div>
         <div class="md:hidden">
@@ -19,48 +20,220 @@
                 <!-- Hamburger Icon -->
                 <div id="hamburger" class="w-6 h-6 flex flex-col justify-center items-center space-y-1">
                     <span
-                        class="block w-6 h-0.5 bg-white transform transition-transform duration-300 ease-in-out"></span>
+                        class="block w-6 h-0.5 bg-gray-700 transform transition-transform duration-300 ease-in-out"></span>
                     <span
-                        class="block w-6 h-0.5 bg-white transform transition-transform duration-300 ease-in-out"></span>
+                        class="block w-6 h-0.5 bg-gray-700 transform transition-transform duration-300 ease-in-out"></span>
                     <span
-                        class="block w-6 h-0.5 bg-white transform transition-transform duration-300 ease-in-out"></span>
+                        class="block w-6 h-0.5 bg-gray-700 transform transition-transform duration-300 ease-in-out"></span>
                 </div>
             </button>
             <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center">
-                <div class="w-14 h-14 flex items-center justify-center">
-                    <img src="img/logo-ibul.png" alt="Logo">
+                <div id="logo2" class="w-14 h-14 flex items-center justify-center">
+                    <img src="img/logo-ibul.png" class="logo-blue" alt="Logo">
                 </div>
             </div>
         </div>
 
         <!-- Mobile Menu -->
         <div id="navigation-menu"
-            class="absolute inset-x-0 top-full bg-slate-800 hidden p-4 md:static md:flex md:items-center md:space-x-4 md:bg-transparent md:p-0 shadow-lg md:shadow-none z-50">
+            class="text-gray-700 absolute inset-x-0 top-full bg-white/80 backdrop-blur-md hidden p-4 md:static md:flex md:items-center md:space-x-6 md:bg-transparent md:p-0 shadow-lg md:shadow-none z-50 border-b md:border-0">
+            <a href="#home"
+                class="block py-3 px-4 hover:bg-blue-500 hover:text-white rounded-lg md:inline-block md:p-2 md:hover:bg-blue-500 md:hover:text-white transition-all duration-300 font-medium">Home</a>
             <a href="#"
-                class="block py-2 px-4 hover:bg-slate-700 rounded md:inline-block md:p-0 md:hover:bg-transparent md:hover:text-slate-300 transition-colors">Home</a>
-            <a href="#"
-                class="block py-2 px-4 hover:bg-slate-700 rounded md:inline-block md:p-0 md:hover:bg-transparent md:hover:text-slate-300 transition-colors">About
+                class="block py-2 px-4 hover:bg-blue-500 hover:text-white rounded-lg md:inline-block md:p-2 md:hover:bg-blue-500 md:hover:text-white transition-all duration-300 font-medium">About
                 Me</a>
             <a href="#"
-                class="block py-2 px-4 hover:bg-slate-700 rounded md:inline-block md:p-0 md:hover:bg-transparent md:hover:text-slate-300 transition-colors">Project</a>
+                class="block py-2 px-4 hover:bg-blue-500 hover:text-white rounded md:inline-block md:p-2 md:hover:bg-blue-500 md:hover:text-white transition-all duration-300 font-medium">Project</a>
             <a href="#"
-                class="block py-2 px-4 hover:bg-slate-700 rounded md:inline-block md:p-0 md:hover:bg-transparent md:hover:text-slate-300 transition-colors">Contact</a>
+                class="block py-2 px-4 hover:bg-blue-500 hover:text-white rounded md:inline-block md:p-2 md:hover:bg-blue-500 md:hover:text-white transition-all duration-300 font-medium">Contact</a>
         </div>
 
         <div class="flex items-center">
-            <div class="w-12 h-12 rounded-full bg-slate-600 flex items-center justify-center">
+            <div class="w-12 h-12 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 p-0.5">
                 <img src="img/ibul.webp" alt="Profile" class="rounded-full">
             </div>
         </div>
     </nav>
 
-    <main class="p-4">
-        <section class="bg-white shadow rounded-lg p-6 mt-4">
-            <h1 class="text-2xl font-bold mb-4">Welcome to My Portfolio</h1>
-            <p class="text-slate-500">This is a sample content area. The mobile navigation menu will work properly on
-                smaller screens.</p>
-        </section>
-    </main>
+    <!-- Hero Section -->
+    <div class="content-wrapper">
+        <main class="container mx-auto px-4 py-12" id="home">
+            <section class="text-center min-h-screen flex flex-col justify-center items-center relative">
+                <!-- Background decorative elements -->
+                <div class="absolute top-20 left-10 w-32 h-32 bg-blue-200/30 rounded-full blur-xl"></div>
+                <div class="absolute bottom-32 right-16 w-40 h-40 bg-purple-200/30 rounded-full blur-xl"></div>
+                <div class="absolute top-40 right-20 w-24 h-24 bg-indigo-200/30 rounded-full blur-xl"></div>
+
+                <div class="relative z-10 max-w-4xl mx-auto">
+                    <div class="animate-fade-in-up">
+                        <p class="text-2xl md:text-2xl text-gray-600 mb-4 font-light">Hello, my name is</p>
+                    </div>
+                    <div class="animate-fade-in-up" style="animation-delay: 0.2s;">
+                        <h1 id="my-name" class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 gradient-text">
+                        </h1>
+                    </div>
+                    <div class="animate-fade-in-up" style="animation-delay: 0.4s;">
+                        <h2 class="text-xl md:text-2xl lg:text-3xl text-gray-700 mb-8 font-medium">
+                            Frontend & Backend Web Developer
+                        </h2>
+                    </div>
+                    <div class="animate-fade-in-up" style="animation-delay: 0.6s;">
+                        <h2 class="text-xl md:text-2xl lg:text-3xl text-gray-700 mb-8 font-bold">
+                            Here's My Stack
+                        </h2>
+                    </div>
+                    <!-- <div class="animate-fade-in-up" style="animation-delay: 0.6s;">
+                    <p class="text-base md:text-lg text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
+                        Saya mengspecialisasikan diri dalam membangun aplikasi web modern, desain antarmuka yang
+                        intuitif,
+                        dan pengalaman pengguna yang engaging. Berpengalaman dalam React, Node.js, dan teknologi
+                        terkini.
+                    </p>
+                </div> -->
+
+                    <!-- Tech Stack Badges -->
+                    <div class="animate-fade-in-up" style="animation-delay: 0.8s;">
+                        <div class="flex flex-wrap justify-center gap-3 mb-12">
+                            <div
+                                class="flex flex-col items-center px-1 py-1 bg-white/70 backdrop-blur-sm border border-gray-200 rounded-xl text-sm font-medium text-gray-700 hover:bg-white hover:shadow-md transition-all duration-300">
+                                <img src="https://skillicons.dev/icons?i=html" class="mb-2">
+                                <span class="text-gray-700 text-sm font-medium">HTML</span>
+                            </div>
+                            <div
+                                class="flex flex-col items-center px-1 py-1 bg-white/70 backdrop-blur-sm border border-gray-200 rounded-xl text-sm font-medium text-gray-700 hover:bg-white hover:shadow-md transition-all duration-300">
+                                <img src="https://skillicons.dev/icons?i=css" class="mb-2">
+                                <span class="text-gray-700 text-sm font-medium">CSS</span>
+                            </div>
+                            <div
+                                class="flex flex-col items-center px-1 py-1 bg-white/70 backdrop-blur-sm border border-gray-200 rounded-xl text-sm font-medium text-gray-700 hover:bg-white hover:shadow-md transition-all duration-300">
+                                <img src="https://skillicons.dev/icons?i=javascript" class="mb-2">
+                                <span class="text-gray-700 text-sm font-medium">JavaScript</span>
+                            </div>
+                            <div
+                                class="flex flex-col items-center px-1 py-1 bg-white/70 backdrop-blur-sm border border-gray-200 rounded-xl text-sm font-medium text-gray-700 hover:bg-white hover:shadow-md transition-all duration-300">
+                                <img src="https://skillicons.dev/icons?i=php" class="mb-2">
+                                <span class="text-gray-700 text-sm font-medium">PHP</span>
+                            </div>
+                            <div
+                                class="flex flex-col items-center px-1 py-1 bg-white/70 backdrop-blur-sm border border-gray-200 rounded-xl text-sm font-medium text-gray-700 hover:bg-white hover:shadow-md transition-all duration-300">
+                                <img src="https://skillicons.dev/icons?i=python" class="mb-2">
+                                <span class="text-gray-700 text-sm font-medium">Python</span>
+                            </div>
+                            <div
+                                class="flex flex-col items-center px-1 py-1 bg-white/70 backdrop-blur-sm border border-gray-200 rounded-xl text-sm font-medium text-gray-700 hover:bg-white hover:shadow-md transition-all duration-300">
+                                <img src="https://skillicons.dev/icons?i=bootstrap" class="mb-2">
+                                <span class="text-gray-700 text-sm font-medium">Bootstrap</span>
+                            </div>
+                            <div
+                                class="flex flex-col items-center px-1 py-1 bg-white/70 backdrop-blur-sm border border-gray-200 rounded-xl text-sm font-medium text-gray-700 hover:bg-white hover:shadow-md transition-all duration-300">
+                                <img src="https://skillicons.dev/icons?i=tailwind" class="mb-2">
+                                <span class="text-gray-700 text-sm font-medium">Tailwind</span>
+                            </div>
+                            <div
+                                class="flex flex-col items-center px-1 py-1 bg-white/70 backdrop-blur-sm border border-gray-200 rounded-xl text-sm font-medium text-gray-700 hover:bg-white hover:shadow-md transition-all duration-300">
+                                <img src="https://skillicons.dev/icons?i=nodejs" class="mb-2">
+                                <span class="text-gray-700 text-sm font-medium">NodeJs</span>
+                            </div>
+                            <div
+                                class="flex flex-col items-center px-1 py-1 bg-white/70 backdrop-blur-sm border border-gray-200 rounded-xl text-sm font-medium text-gray-700 hover:bg-white hover:shadow-md transition-all duration-300">
+                                <img src="https://skillicons.dev/icons?i=nextjs" class="mb-2">
+                                <span class="text-gray-700 text-sm font-medium">NextJs</span>
+                            </div>
+                            <div
+                                class="flex flex-col items-center px-1 py-1 bg-white/70 backdrop-blur-sm border border-gray-200 rounded-xl text-sm font-medium text-gray-700 hover:bg-white hover:shadow-md transition-all duration-300">
+                                <img src="https://skillicons.dev/icons?i=laravel" class="mb-2">
+                                <span class="text-gray-700 text-sm font-medium">Laravel</span>
+                            </div>
+                            <div
+                                class="flex flex-col items-center px-1 py-1 bg-white/70 backdrop-blur-sm border border-gray-200 rounded-xl text-sm font-medium text-gray-700 hover:bg-white hover:shadow-md transition-all duration-300">
+                                <img src="https://skillicons.dev/icons?i=postgresql" class="mb-2">
+                                <span class="text-gray-700 text-sm font-medium">Postgre</span>
+                            </div>
+                            <div
+                                class="flex flex-col items-center px-1 py-1 bg-white/70 backdrop-blur-sm border border-gray-200 rounded-xl text-sm font-medium text-gray-700 hover:bg-white hover:shadow-md transition-all duration-300">
+                                <img src="https://skillicons.dev/icons?i=mysql" class="mb-2">
+                                <span class="text-gray-700 text-sm font-medium">MySQL</span>
+                            </div>
+                            <div
+                                class="flex flex-col items-center px-1 py-1 bg-white/70 backdrop-blur-sm border border-gray-200 rounded-xl text-sm font-medium text-gray-700 hover:bg-white hover:shadow-md transition-all duration-300">
+                                <img src="https://skillicons.dev/icons?i=git" class="mb-2">
+                                <span class="text-gray-700 text-sm font-medium">Git</span>
+                            </div>
+                            <div
+                                class="flex flex-col items-center px-1 py-1 bg-white/70 backdrop-blur-sm border border-gray-200 rounded-xl text-sm font-medium text-gray-700 hover:bg-white hover:shadow-md transition-all duration-300">
+                                <img src="https://skillicons.dev/icons?i=github" class="mb-2">
+                                <span class="text-gray-700 text-sm font-medium">GitHub</span>
+                            </div>
+                            <div
+                                class="flex flex-col items-center px-1 py-1 bg-white/70 backdrop-blur-sm border border-gray-200 rounded-xl text-sm font-medium text-gray-700 hover:bg-white hover:shadow-md transition-all duration-300">
+                                <img src="https://skillicons.dev/icons?i=arduino" class="mb-2">
+                                <span class="text-gray-700 text-sm font-medium">Arduino</span>
+                            </div>
+                            <div
+                                class="flex flex-col items-center px-1 py-1 bg-white/70 backdrop-blur-sm border border-gray-200 rounded-xl text-sm font-medium text-gray-700 hover:bg-white hover:shadow-md transition-all duration-300">
+                                <img src="https://skillicons.dev/icons?i=vscode" class="mb-2">
+                                <span class="text-gray-700 text-sm font-medium">VScode</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="animate-fade-in-up" style="animation-delay: 1s;">
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                            <button
+                                class="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500/50">
+                                My Portfolio
+                            </button>
+                            <button
+                                class="px-8 py-4 border-2 border-gray-300 text-gray-700 rounded-full font-semibold hover:border-blue-500 hover:text-blue-600 hover:bg-white hover:shadow-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-gray-400/50">
+                                Contact
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scroll indicator -->
+                <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+                    <div class="w-6 h-10 border-2 border-gray-400 rounded-full flex justify-center">
+                        <div class="w-1 h-2 bg-gray-400 rounded-full mt-2 animate-bounce"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Additional content section -->
+            <!-- <section class="bg-white/60 backdrop-blur-sm shadow-lg rounded-2xl p-8 mt-12 border border-white/20">
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <div class="p-6 hover:bg-white/50 rounded-xl transition-all duration-300">
+                        <div
+                            class="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white text-2xl font-bold">🎨</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">UI/UX Design</h3>
+                        <p class="text-gray-600">Menciptakan desain yang intuitif dan user-friendly dengan fokus pada
+                            pengalaman pengguna yang optimal.</p>
+                    </div>
+
+                    <div class="p-6 hover:bg-white/50 rounded-xl transition-all duration-300">
+                        <div
+                            class="w-16 h-16 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white text-2xl font-bold">⚡</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Frontend Development</h3>
+                        <p class="text-gray-600">Membangun aplikasi web responsif dan performant menggunakan teknologi
+                            modern seperti React dan Vue.js.</p>
+                    </div>
+
+                    <div class="p-6 hover:bg-white/50 rounded-xl transition-all duration-300">
+                        <div
+                            class="w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white text-2xl font-bold">🔧</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Backend Development</h3>
+                        <p class="text-gray-600">Mengembangkan API dan sistem backend yang scalable menggunakan Node.js,
+                            Express, dan database modern.</p>
+                    </div>
+                </div>
+            </section> -->
+        </main>
+    </div>
     <!-- Script.js -->
     <script src="js/script.js"></script>
 </body>
