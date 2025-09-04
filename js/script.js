@@ -98,5 +98,5 @@ document.addEventListener('DOMContentLoaded', function () {
         window.open('https://instagram.com/lalusahibul_', 'blank')
     });
 
-    document.getElementById("my-name").innerText = "Lalu Sahibul Purwa";
+    document.getElementById("my-name").innerHTML = "Lalu Sahibul Purwa";
 });
