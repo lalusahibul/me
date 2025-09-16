@@ -35,7 +35,7 @@
         <img
           src="/images/ibul.webp"
           alt="Profile"
-          class="w-12 h-12 rounded-full border-2 border-gray-600 object-cover"
+          class="w-12 h-12 rounded-full border-2 border-blue-700 object-cover"
         />
       </div>
     </div>
