@@ -101,7 +101,7 @@
         <h2 class="text-2xl sm:text-4xl font-black text-[#EDF6FF] tracking-wider uppercase drop-shadow-[2px_2px_0_rgba(0,0,0,1)]">
           Featured Projects
         </h2>
-        <p class="text-xs sm:text-sm text-gray-300 mt-2">List of Completed Missions and Applications.</p>
+        <p class="text-xs sm:text-sm text-gray-300 mt-2">List of Missions and Applications.</p>
       </div>
 
       <div class="flex flex-wrap justify-center gap-2 sm:gap-3 mb-10">
@@ -300,15 +300,15 @@
 
             <!-- X -->
             <a 
-              href="https://x.com/lalusahibulprw" 
-              target="_blank" 
-              class="flex items-center justify-between p-3 bg-[#1B2B45] hover:bg-[#45D6E8] hover:text-[#101A2C] text-[#EDF6FF] font-bold text-xs sm:text-sm border-2 sm:border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:translate-x-1 active:translate-y-1 active:shadow-none transition-all group"
+              href="https://x.com/lalusahibulprw"
+              target="_blank"
+              class="flex items-center justify-between p-3 bg-[#1B2B45] hover:bg-[#FFFFFF] hover:text-[#000000] text-[#EDF6FF] font-bold text-xs sm:text-sm border-2 sm:border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:translate-x-1 active:translate-y-1 active:shadow-none transition-all group"
             >
               <span class="flex items-center gap-3">
                 <i class="fab fa-x-twitter text-lg sm:text-xl"></i>
-                <span class="uppercase">X</span>
+                <span class="uppercase"></span>
               </span>
-              <span class="text-[#45D6E8] group-hover:text-[#101A2C]">&gt; @lalusahibulprw</span>
+              <span class="text-[#539BF5] group-hover:text-[#000000]">&gt; @lalusahibulprw</span>
             </a>
 
           </div>
@@ -339,7 +339,7 @@
                 v-model="form.name"
                 type="text" 
                 required
-                placeholder="Masukkan nama Anda..."
+                placeholder="Enter your nickname..."
                 class="w-full bg-[#101A2C] border-2 border-[#101A2C] p-3 text-xs sm:text-sm text-[#45D6E8] font-mono focus:border-[#45D6E8] focus:outline-none transition-colors placeholder-gray-500"
               />
             </div>
@@ -380,7 +380,7 @@
                 v-model="form.message"
                 rows="4" 
                 required
-                placeholder="Tuliskan detail pesan atau deskripsi project di sini..."
+                placeholder="Enter message details or project description here..."
                 class="w-full bg-[#101A2C] border-2 border-[#101A2C] p-3 text-xs sm:text-sm text-[#45D6E8] font-mono focus:border-[#45D6E8] focus:outline-none transition-colors placeholder-gray-500 resize-none"
               ></textarea>
             </div>
