@@ -16,7 +16,7 @@
     <path v-else d="M6 18L18 6M6 6l12 12" />
   </svg>
 </button>
-        <a href="/" class="text-xl font-bold hidden md:block"><img src="/images/logo-ibul.png" alt="Logo" class="h-12 w-12"></a>
+        <a href="https://instagram.com/lalusahibul_/" class="text-xl font-bold hidden md:block"><img src="/images/logo-ibul.png" alt="Logo" class="h-12 w-12"></a>
       </div>
       <div class="hidden md:flex space-x-6">
         <a href="#home" class="hover:text-gray-300">Home</a>
@@ -27,7 +27,7 @@
 
       <!-- Logo di tengah -->
       <div class="md:hidden absolute left-1/2 transform -translate-x-1/2">
-        <a href="/" class="text-lg font-bold"> <img src="/images/logo-ibul.png" alt="Logo" class="h-12 w-12"></a>
+        <a href="https://instagram.com/lalusahibul_/" class="text-lg font-bold"> <img src="/images/logo-ibul.png" alt="Logo" class="h-12 w-12"></a>
       </div>
 
       <!-- Profile Kanan -->
