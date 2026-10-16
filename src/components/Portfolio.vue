@@ -444,7 +444,7 @@ const projects = ref([
     description: 'An interactive web application that generates GitHub profile analysis and roasts using Gemini AI.',
     tags: ['Next.js', 'Gemini API', 'Tailwind', 'Github API'],
     category: 'FRONTEND',
-    image: 'images/githubroasting.PNG',
+    image: '/images/githubroasting.PNG',
     demoUrl: 'https://github-roasting-seven.vercel.app',
     githubUrl: 'https://github.com/lalusahibul/github-roasting/',
     status: 'CLEARED'
@@ -455,7 +455,7 @@ const projects = ref([
     description: 'An open-source PHP package for generating dummy Indonesian Identity Numbers (NIK) for Laravel application testing.',
     tags: ['PHP', 'Laravel', 'Package', 'Open Source'],
     category: 'PACKAGE',
-    image: 'images/logo-ibul.png',
+    image: '/images/logo-ibul.png',
     demoUrl: '#',
     githubUrl: 'https://github.com/lalusahibul/fakenik',
     status: 'ON GOING'
@@ -466,7 +466,7 @@ const projects = ref([
     description: 'A public complaint system designed to provide an easy platform for citizens to submit reports to officers. Officers can then respond to and process these public reports.',
     tags: ['Laravel', 'MySQL', 'CSS', 'JavaScript', 'PHP'],
     category: 'FULL-STACK',
-    image: 'images/logo-ibul.png',
+    image: '/images/logo-ibul.png',
     demoUrl: '#',
     githubUrl: 'https://github.com/lalusahibul/pengaduanMasyarakat',
     status: 'CLEARED'
@@ -477,7 +477,7 @@ const projects = ref([
     description: 'A website to convert Morse code to text and vice versa.',
     tags: ['JavaScript', 'HTML5', 'CSS3'],
     category: 'FRONTEND',
-    image: 'images/morseconverter.PNG',
+    image: '/images/morseconverter.PNG',
     demoUrl: 'https://lalusahibul.github.io/morseConverter/',
     githubUrl: 'https://github.com/lalusahibul/morseConverter',
     status: 'CLEARED'
@@ -488,7 +488,7 @@ const projects = ref([
     description: 'Manga reading website for wibu.',
     tags: ['JavaScript', 'HTML5', 'CSS3'],
     category: 'FRONTEND',
-    image: 'images/animeku.PNG',
+    image: '/images/animeku.PNG',
     demoUrl: 'https://animeku-ten.vercel.app/',
     githubUrl: 'https://github.com/lalusahibul/animeKu',
     status: 'ON GOING'
@@ -499,7 +499,7 @@ const projects = ref([
     description: `To see who follows you and who doesn't follow you back on IG based on Instagram data.`,
     tags: ['JavaScript', 'HTML5', 'CSS3'],
     category: 'FRONTEND',
-    image: 'images/findoutgram.PNG',
+    image: '/images/findoutgram.PNG',
     demoUrl: 'https://lalusahibul.github.io/ig_followersChecker_v2/',
     githubUrl: 'https://github.com/lalusahibul/ig_followersChecker_v2',
     status: 'ON GOING'
