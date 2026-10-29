@@ -504,6 +504,17 @@ const projects = ref([
     githubUrl: 'https://github.com/lalusahibul/ig_followersChecker_v2',
     status: 'ON GOING'
   },
+  {
+    id: 7,
+    title: 'Enigma Simulator',
+    description: `World War II Enigma machine simulation website.`,
+    tags: ['JavaScript', 'HTML5', 'CSS', 'Tailwind'],
+    category: 'FRONTEND',
+    image: 'images/enigma.PNG',
+    demoUrl: 'https://lalusahibul.github.io/enigma/',
+    githubUrl: 'https://github.com/lalusahibul/enigma',
+    status: 'CLEARED'
+  },
 ])
 
 const filteredProjects = computed(() => {
